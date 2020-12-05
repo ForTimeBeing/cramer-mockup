@@ -19,7 +19,7 @@ import { AgmCoreModule } from '@agm/core';
     BrowserAnimationsModule,
     MatButtonModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDdAeun_h3LJo_dhMWRkky0KxRpyYHuNwM',
+      apiKey: '',
       libraries: ['places']
     })
   ],
