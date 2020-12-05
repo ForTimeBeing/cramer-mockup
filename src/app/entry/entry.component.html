@@ -8,7 +8,7 @@
                 src="https://cdn.vox-cdn.com/thumbor/eISYX3E9E-V6BIINtoqdt9-BCqY=/0x0:4170x2781/920x613/filters:focal(1794x850:2460x1516):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/68451245/1284965683.0.jpg"
                 alt="weed dude">
         </div>
-        <div class="right-panel" style="display: flex; flex-direction: column;">
+        <div class="right-panel" style="display: flex; flex-direction: column; width: 100%; padding: 2rem;">
             <div class="menu" style=" display:flex; justify-content: flex-end;">
                 <button mat-button class="menu-buttons">Get App</button>
                 <button mat-button class="menu-buttons">Sign In</button>
@@ -17,10 +17,9 @@
                 <span class="content-text">Order Some Dank ass nugs you'll love</span>
                 <div class="container">
                     <div class="form-group" style="">
-                        <label>Enter address</label>
                         <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()"
                             placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off"
-                            spellcheck="off" type="text" #search style="width: 100%;margin: 1rem;">
+                            spellcheck="off" type="text" #search style="width: 95%;margin: 1rem;">
                     </div>
 
                     <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
