@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EntryComponent } from './entry/entry.component';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,11 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDdAeun_h3LJo_dhMWRkky0KxRpyYHuNwM',
+      libraries: ['places']
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

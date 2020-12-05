@@ -18,6 +18,7 @@ padding: 2rem;
     display: flex;
     justify-content: space-between;
     color: white;
+    height: 100%;
 }
 .menu-buttons{
     color:rgb(62, 114, 255); 
@@ -31,4 +32,7 @@ padding: 2rem;
     font-weight: bold;
     font-size: 50px;
     color:black;
+}
+agm-map {
+    height: 300px;
 }
